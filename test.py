@@ -1,4 +1,4 @@
-from capas import CyberArk
+from capam import CyberArk
 
 ca = CyberArk()
 
