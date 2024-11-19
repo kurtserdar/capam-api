@@ -49,7 +49,7 @@ class CyberArk:
 
         config = configparser.ConfigParser(inline_comment_prefixes="#")
         config.read(config_path)
-        logging.info(f"Okundu")
+        logging.info(f"The configuration file has been loaded: {config_path}")
         return config
 
     def api_request(self, method, url, headers=None, data=None, params=None):
@@ -353,7 +353,7 @@ if __name__ == "__main__":
         logging.info("Starting CyberArk operations.")
         token = cyberark.authenticate()
         if token:
-            logging.info(f"Authenticated with token: {token}")
+            logging.info("Authenticated with token.")
 
 
         else:
